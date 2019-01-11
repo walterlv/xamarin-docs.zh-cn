@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2018
-ms.openlocfilehash: d19d8590171e585b6f65b2a63fc9847d7d672a56
-ms.sourcegitcommit: be6f6a8f77679bb9675077ed25b5d2c753580b74
+ms.openlocfilehash: 4e2d33276c865695d70abb2d8e00b3b80d446839
+ms.sourcegitcommit: 395774577f7524b57035c5cca3c9034a4b636489
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058395"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54207981"
 ---
 # <a name="xamarinforms-tabbed-page"></a>Xamarin.Forms 选项卡式页面
 
@@ -37,7 +37,7 @@ _Xamarin.Forms TabbedPage 包含一系列选项卡和较大的详细信息区域
   > [!NOTE]
   > 请注意，`TabbedRenderer` for iOS 有可替代的 `GetIcon` 方法，可以用来从指定的源加载选项卡图标。 使用此替代方法可以将 SVG 图像用作 `TabbedPage` 上的图标。 此外，可以提供选定和未选定版本的图标。
 
-- 在 Android 上，默认情况下选项卡列表显示在屏幕顶部，详细信息区域显示在下方。 但是，可以使用特定于平台布局将选项卡列表移动至屏幕底部。 有关详细信息，请参阅[设置 TabbedPage 工具栏位置和颜色](~/xamarin-forms/platform/platform-specifics/consuming/android.md#tabbedpage-toolbar)。
+- 在 Android 上，默认情况下选项卡列表显示在屏幕顶部，详细信息区域显示在下方。 但是，可以使用特定于平台布局将选项卡列表移动至屏幕底部。 有关详细信息，请参阅[设置 TabbedPage 工具栏位置和颜色](~/xamarin-forms/platform/android/tabbedpage-toolbar-placement-color.md)。
 
   > [!NOTE]
   > 请注意，当在 Android 上使用 AppCompat 时，每个选项卡也将显示一个图标。 此外，`TabbedPageRenderer` for Android AppCompat 有可替代的 `GetIconDrawable` 方法，可以用来从自定义 `Drawable` 加载选项卡图标。 使用此替代方法可以将 SVG 图像用作 `TabbedPage` 上的图标，并且可以使用顶部和底部选项卡。 或者，可替代的 `SetTabIcon` 方法可用于从顶部标签栏的自定义 `Drawable` 加载选项卡图标。

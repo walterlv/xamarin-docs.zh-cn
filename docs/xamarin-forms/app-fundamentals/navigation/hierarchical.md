@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/14/2018
-ms.openlocfilehash: 0511cd1a4cf76368623c56ef53cd98323114f98e
-ms.sourcegitcommit: be6f6a8f77679bb9675077ed25b5d2c753580b74
+ms.openlocfilehash: f69acd60d7a80607528e4a39ee6a8bfbc19711f5
+ms.sourcegitcommit: 395774577f7524b57035c5cca3c9034a4b636489
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058985"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54207968"
 ---
 # <a name="hierarchical-navigation"></a>分层导航
 
@@ -344,9 +344,9 @@ public class TitleViewPage : ContentPage
 > [!IMPORTANT]
 > 很多视图不会出现在导航栏中，除非使用 [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) 和 [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) 属性指定视图的大小。 或者，可以将视图包装在 [`StackLayout`](xref:Xamarin.Forms.StackLayout) 中，并将 [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) 和 [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) 属性设置为适当的值。
 
-注意，因为 [`Layout`](xref:Xamarin.Forms.Layout) 类派生自 [`View`](xref:Xamarin.Forms.View) 类，所以可以设置 [`TitleView`](xref:Xamarin.Forms.NavigationPage.TitleViewProperty) 附加属性来显示包含多个视图的布局类。 在 iOS 和通用 Windows 平台 (UWP) 上，导航条的高度是不能更改的，所以如果导航条中显示的视图大于导航条的默认大小，就会发生剪裁。 但是，在 Android 上，可以通过将 [`NavigationPage.BarHeight`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage.BarHeightProperty) 可绑定属性设置为表示新高度的 `double` 来更改导航条的高度。 有关详细信息，请参阅[在 NavigationPage 上设置导航栏高度](~/xamarin-forms/platform/platform-specifics/consuming/android.md#navigationpage-barheight)。
+注意，因为 [`Layout`](xref:Xamarin.Forms.Layout) 类派生自 [`View`](xref:Xamarin.Forms.View) 类，所以可以设置 [`TitleView`](xref:Xamarin.Forms.NavigationPage.TitleViewProperty) 附加属性来显示包含多个视图的布局类。 在 iOS 和通用 Windows 平台 (UWP) 上，导航条的高度是不能更改的，所以如果导航条中显示的视图大于导航条的默认大小，就会发生剪裁。 但是，在 Android 上，可以通过将 [`NavigationPage.BarHeight`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage.BarHeightProperty) 可绑定属性设置为表示新高度的 `double` 来更改导航条的高度。 有关详细信息，请参阅[在 NavigationPage 上设置导航栏高度](~/xamarin-forms/platform/android/navigationpage-bar-height.md)。
 
-或者，可以通过在导航栏中放置一些内容，以及在与导航栏颜色匹配的页面内容顶部的视图中放置一些内容，来建议扩展导航条。 此外，在 iOS 中，导航栏底部的分隔线和阴影可以通过将 [`NavigationPage.HideNavigationBarSeparator`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.HideNavigationBarSeparatorProperty) 可绑定属性设置为 `true` 来移除。 有关详细信息，请参阅[在 NavigationPage 上隐藏导航栏分隔符](~/xamarin-forms/platform/platform-specifics/consuming/ios.md#navigationpage-hideseparatorbar)。
+或者，可以通过在导航栏中放置一些内容，以及在与导航栏颜色匹配的页面内容顶部的视图中放置一些内容，来建议扩展导航条。 此外，在 iOS 中，导航栏底部的分隔线和阴影可以通过将 [`NavigationPage.HideNavigationBarSeparator`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.HideNavigationBarSeparatorProperty) 可绑定属性设置为 `true` 来移除。 有关详细信息，请参阅[在 NavigationPage 上隐藏导航栏分隔符](~/xamarin-forms/platform/ios/navigation-bar-separator.md)。
 
 > [!NOTE]
 > [`BackButtonTitle`](xref:Xamarin.Forms.NavigationPage.BackButtonTitleProperty)、[`Title`](xref:Xamarin.Forms.Page.Title)、[`TitleIcon`](xref:Xamarin.Forms.NavigationPage.TitleIconProperty) 和 [`TitleView`](xref:Xamarin.Forms.NavigationPage.TitleViewProperty) 属性都可以定义占用导航栏空间的值。 虽然导航栏大小因平台和屏幕大小而异，但由于可用空间有限，设置所有这些属性将导致冲突。 你可能会发现，与其尝试使用这些属性的组合，不如仅通过设置 `TitleView` 属性来更好地实现所需的导航栏设计。
@@ -355,7 +355,7 @@ public class TitleViewPage : ContentPage
 
 当在 [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) 的导航栏中显示 [`View`](xref:Xamarin.Forms.View) 时，需要注意一些限制：
 
-- 在 iOS 中，放置在 `NavigationPage` 导航栏中的视图会根据是否启用大标题显示在不同的位置。 有关启用大标题的详细信息，请参阅[显示大标题](~/xamarin-forms/platform/platform-specifics/consuming/ios.md#large_title)。
+- 在 iOS 中，放置在 `NavigationPage` 导航栏中的视图会根据是否启用大标题显示在不同的位置。 有关启用大标题的详细信息，请参阅[显示大标题](~/xamarin-forms/platform/ios/page-large-title.md)。
 - 在 Android 上，只有在使用 app-compat 的应用程序中，才能在 `NavigationPage` 的导航栏中放置视图。
 - 不建议在 `NavigationPage` 的导航条中放置大而复杂的视图，如 [`ListView`](xref:Xamarin.Forms.ListView) 和 [`TableView`](xref:Xamarin.Forms.TableView)。
 

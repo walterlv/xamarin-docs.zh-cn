@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/15/2018
-ms.openlocfilehash: 69fc1cd146227e464e70c347d3e28d250a7f1346
-ms.sourcegitcommit: be6f6a8f77679bb9675077ed25b5d2c753580b74
+ms.openlocfilehash: 3e3331489c3b437366f4bdcc6990fe282d213a6a
+ms.sourcegitcommit: 395774577f7524b57035c5cca3c9034a4b636489
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050434"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54207877"
 ---
 # <a name="keyboard-navigation-in-xamarinforms"></a>Xamarin.Forms 中的键盘导航
 
@@ -58,7 +58,7 @@ ms.locfileid: "53050434"
 此处的 Tab 键顺序是基于行的，是在 XAML 中列出控件的顺序。 因此，按 Tab 键可以导航到名 [`Entry`](xref:Xamarin.Forms.Entry) 实例，然后是姓氏 `Entry` 实例。 但是，更直观的体验是使用列优先的 Tab 导航，这样按下 Tab 键就可以通过名字对导航。 这可以通过指定输入控件的 Tab 键顺序来实现。
 
 > [!NOTE]
-> 在通用 Windows 平台上，可以定义键盘快捷方式，为用户提供一种直观的方式，以便通过键盘快速导航并与应用程序的可见 UI 交互，而不是通过触摸或鼠标。 有关更多信息，请参阅[设置 VisualElement 访问键](~/xamarin-forms/platform/platform-specifics/consuming/windows.md#visualelement-accesskeys)。
+> 在通用 Windows 平台上，可以定义键盘快捷方式，为用户提供一种直观的方式，以便通过键盘快速导航并与应用程序的可见 UI 交互，而不是通过触摸或鼠标。 有关更多信息，请参阅[设置 VisualElement 访问键](~/xamarin-forms/platform/windows/visualelement-access-keys.md)。
 
 ## <a name="setting-the-tab-order"></a>设置 Tab 键顺序
 
