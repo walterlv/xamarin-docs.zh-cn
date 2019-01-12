@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: lobrien
 ms.author: laobri
 ms.date: 03/16/2017
-ms.openlocfilehash: 1c88a5c16dbe5559f0b551a97a27ebb893991187
-ms.sourcegitcommit: e268fd44422d0bbc7c944a678e2cc633a0493122
+ms.openlocfilehash: 119fd478727a002622861c94462b93b75720a992
+ms.sourcegitcommit: fabd3b51dca6d904009d0670137c5fb5ee6c32ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50120497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54249198"
 ---
 # <a name="ios-security-and-privacy-features"></a>iOS 安全和隐私功能
 
@@ -27,7 +27,7 @@ Apple 已与安全和隐私 iOS 10 （及更高版本） 中存在多项增强�
 与安全和隐私已进行了以下常规更改 iOS 10 中：
 
 - 常见数据安全体系结构 (CDSA) API 已弃用，并应替换为要生成非对称密钥的 SecKey API。
-- 新`NSAllowsArbitraryLoadsInWebContent`可以将密钥添加到应用程序**Info.plist**文件，并将允许网页时的应用程序的其余部分仍启用 Apple 传输安全 (ATS) 保护正确加载。 有关详细信息，请参阅我们[应用程序传输安全](~/ios/app-fundamentals/ats.md)文档。
+- 新`NSAllowsArbitraryLoadsInWebContent`键可以添加到应用程序**Info.plist**文件，并将允许网页时的应用程序的其余部分仍启用 Apple 传输安全 (ATS) 保护正确加载。 有关详细信息，请参阅我们[应用程序传输安全](~/ios/app-fundamentals/ats.md)文档。
 - 由于新剪贴板中 iOS 10 和 macOS Sierra 允许用户设备之间进行复制和粘贴，该 API 已扩展为允许剪贴板限制为特定设备和加盖时间戳来给定时点会自动清除。 此外，命名的选不再保留，并且应替换为共享粘贴板容器。
 - 对于所有 SSL/TLS 连接，RC4 对称密码现在默认处于禁用状态。 此外，安全传输 API 不再支持 SSLv3，建议开发人员停止尽可能快地使用 sha-1 和 3DES 加密方法。
 
@@ -51,9 +51,9 @@ Apple 已与安全和隐私 iOS 10 （及更高版本） 中存在多项增强�
 - **隐私-健康更新使用说明**(`NSHealthUpdateUsageDescription`)-允许开发人员介绍了为什么应用要编辑用户的运行状况数据。 有关详细信息，请参阅 Apple [HKHealthStore 类引用](https://developer.apple.com/reference/healthkit/hkhealthstore)。
 - **隐私-HomeKit 使用说明**(`NSHomeKitUsageDescription`)-允许开发人员介绍了为什么应用程序需要访问用户的 HomeKit 配置数据。
 - **隐私-位置始终使用说明**(`NSLocationAlwaysUsageDescription`)-允许开发人员介绍了为什么应用要始终有权访问用户的位置。
-- [弃用]**隐私-位置使用说明**(`NSLocationUsageDescription`)-允许开发人员介绍了为什么应用程序需要访问用户位置。 *注意： 此密钥已弃用在 iOS 8 （和更高版本） 中。使用`NSLocationAlwaysUsageDescription`或`NSLocationWhenInUseUsageDescription`相反。*
+- [弃用]**隐私-位置使用说明**(`NSLocationUsageDescription`)-允许开发人员介绍了为什么应用程序需要访问用户位置。 *注意：IOS 8 （和更高版本） 中已弃用此密钥。使用`NSLocationAlwaysUsageDescription`或`NSLocationWhenInUseUsageDescription`相反。*
 - **隐私-位置时在使用情况说明**(`NSLocationWhenInUseUsageDescription`)-允许开发人员介绍了为什么应用要在运行时访问用户的位置。
-- [弃用]**隐私-媒体库使用说明**-允许开发人员介绍了为什么应用程序需要访问对用户的媒体库。 *注意： 此密钥已弃用在 iOS 8 （和更高版本） 中。使用`NSAppleMusicUsageDescription`相反。*
+- [弃用]**隐私-媒体库使用说明**-允许开发人员介绍了为什么应用程序需要访问对用户的媒体库。 *注意：IOS 8 （和更高版本） 中已弃用此密钥。使用`NSAppleMusicUsageDescription`相反。*
 - **隐私-麦克风使用说明**(`NSMicrophoneUsageDescription`)-允许开发人员介绍了为什么应用程序需要访问设备麦克风。
 - **隐私-运动使用说明**(`NSMotionUsageDescription`)-允许开发人员介绍了为什么应用程序需要访问设备的加速感应器。
 - **隐私-照片库使用说明**(`NSPhotoLibraryUsageDescription`)-允许开发人员介绍了为什么应用程序需要访问用户的照片库。

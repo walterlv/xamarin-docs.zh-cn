@@ -6,12 +6,12 @@ ms.assetid: 81174493-02D3-4FF5-AD57-04F3288A7F94
 author: lobrien
 ms.author: laobri
 ms.date: 06/19/2018
-ms.openlocfilehash: 2357003e3a855981f053c48a596b932d9ba36d90
-ms.sourcegitcommit: e268fd44422d0bbc7c944a678e2cc633a0493122
+ms.openlocfilehash: 2bbf0bda42b7bce483d9d036ebf39314dcb73072
+ms.sourcegitcommit: fabd3b51dca6d904009d0670137c5fb5ee6c32ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50104944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54249185"
 ---
 # <a name="inspector-installation-and-requirements"></a>检查器安装和要求
 
@@ -52,7 +52,7 @@ ms.locfileid: "50104944"
 |应用程序平台|IDE 支持|说明|
 |--- |--- |--- |
 |Mac|仅支持在 Visual Studio for Mac|
-|iOS|在 Visual Studio 2017 和 Visual Studio for Mac 支持| |
+|iOS|在 Visual Studio 2017 和 Visual Studio for Mac 支持| 链接器行为必须设置为**不链接**(下**iOS 生成**项目选项) |
 |Android|在 Visual Studio 2017 和 Visual Studio for Mac 支持|必须针对 Android > = 4.0.3，with **fastdev**启用。<br />必须使用 Google、 Visual Studio 或 Xamarin Android 仿真程序。 Android 7 仿真程序可能不允许在此时间的检查。|
 |WPF|仅在 Visual Studio 2017 中支持|
 
@@ -114,8 +114,8 @@ Visual Studio
 
 - 设备在 IDE 中所示的名称
 - 设备 OS 版本
-- Android： 验证是否使用 x86 仿真程序
-- Android： 平台是什么仿真程序正在使用？ Google 仿真器？ Visual Studio Android 仿真器？ Xamarin Android Player？
+- Android:验证使用 x86 仿真程序
+- Android:您是否使用仿真程序平台是什么？ Google 仿真器？ Visual Studio Android 仿真器？ Xamarin Android Player？
 - 正确进行调试的应用显示和函数，在该设备？
 - 设备是否具有网络连接 （通过 web 浏览器的检查）？
 
