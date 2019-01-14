@@ -7,18 +7,18 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/06/2016
-ms.openlocfilehash: 5b94202628c1bcc09d5d2191cb803d58c3e0f0f8
-ms.sourcegitcommit: be6f6a8f77679bb9675077ed25b5d2c753580b74
+ms.openlocfilehash: e52ee0a14098c967923f8d92ac47bc64dac08e8c
+ms.sourcegitcommit: 395774577f7524b57035c5cca3c9034a4b636489
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054876"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54207890"
 ---
 # <a name="xamarinforms-behaviors"></a>Xamarin.Forms 行为
 
 [![下载示例](~/media/shared/download.png) 下载示例](https://developer.xamarin.com/samples/xamarin-forms/behaviors/numericvalidationbehavior/)
 
-Xamarin.Forms 行为是通过从行为或行为 <T> 类派生来创建的。_本文演示如何创建和使用 Xamarin.Forms 行为。_
+_Xamarin.Forms 行为是通过从 Behavior 或 Behavior&lt;T&gt; 类派生来创建的。本文演示如何创建和使用 Xamarin.Forms 行为。_
 
 ## <a name="overview"></a>概述
 

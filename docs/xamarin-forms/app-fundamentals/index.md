@@ -6,13 +6,13 @@ ms.assetid: 7B516BBC-F7E1-4387-9779-7754E2E69723
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 12/03/2018
-ms.openlocfilehash: 015a7dfa3d55b411e6626ae2ac70fd2930661e65
-ms.sourcegitcommit: 01f93a34b466f8d4043cef68fab9b35cd8decee6
+ms.date: 01/08/2018
+ms.openlocfilehash: a65946f21f8ced00e9ad64aec590df37acab1528
+ms.sourcegitcommit: 395774577f7524b57035c5cca3c9034a4b636489
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52898987"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54207812"
 ---
 # <a name="xamarinforms-application-fundamentals"></a>Xamarin.Forms 应用程序基础知识
 
@@ -27,6 +27,10 @@ ms.locfileid: "52898987"
 ## <a name="app-lifecycleapp-lifecyclemd"></a>[应用生命周期](app-lifecycle.md)
 
 借助 `Application` 类、`OnStart`、`OnSleep` 和 `OnResume` 方法以及模式导航事件，可使用自定义代码处理应用程序生命周期事件。
+
+## <a name="application-indexing-and-deep-linkingdeep-linkingmd"></a>[应用程序索引和深层链接](deep-linking.md)
+
+应用程序索引使得用了几次之后可能被忘记的应用程序出现在搜索结果中从而不会被忘。 深层链接使应用程序响应包含应用程序数据的搜索结果，通常是通过导航到引用自深层链接的页面来实现的。
 
 ## <a name="behaviorsbehaviorsindexmd"></a>[行为](behaviors/index.md)
 
@@ -50,7 +54,7 @@ ms.locfileid: "52898987"
 
 ## <a name="filesfilesmd"></a>[文件](files.md)
 
-使用 .NET Standard 库中的代码或使用嵌入资源，即可实现使用 Xamarin.Forms 处理文件。
+使用 .NET Standard 库中的代码或使用嵌入式资源，即可实现使用 Xamarin.Forms 处理文件。
 
 ## <a name="gesturesgesturesindexmd"></a>[手势](gestures/index.md)
 
@@ -66,7 +70,7 @@ Xamarin.Forms 支持使用 SQLite 数据库引擎的数据库驱动型应用程�
 
 ## <a name="messaging-centermessaging-centermd"></a>[消息中心](messaging-center.md)
 
-借助 Xamarin.Forms `MessagingCenter`只需一个简单的消息协定，而不必知道任何关于彼此的信息，便能实现视图模型和其他组件的相互通信。
+借助 Xamarin.Forms `MessagingCenter` 只需一个简单的消息协定，而不必知道任何关于彼此的信息，便能实现视图模型和其他组件的相互通信。
 
 ## <a name="navigationnavigationindexmd"></a>[导航](navigation/index.md)
 
