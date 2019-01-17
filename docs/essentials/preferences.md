@@ -1,18 +1,19 @@
 ---
-title: Xamarin.Essentials：Preferences
+title: Xamarin.Essentials:首选项
 description: 本文档介绍 Xamarin.Essentials 中的 Preferences 类，此类将应用程序首选项保存在键/值存储中。 本文还讨论了如何使用类和可以存储的数据类型。
 ms.assetid: AA81BCBD-79BA-448F-942B-BA4415CA50FF
 author: jamesmontemagno
 ms.author: jamont
-ms.date: 11/04/2018
-ms.openlocfilehash: 0144cdd4e12d53e0ac82af24a932825491db9e41
-ms.sourcegitcommit: 01f93a34b466f8d4043cef68fab9b35cd8decee6
+ms.date: 01/15/2019
+ms.custom: video
+ms.openlocfilehash: 6d57b5ce9cb61363eef24b230f6cf71894f66198
+ms.sourcegitcommit: 53f5e83f4e246be703917d7cc719c8cc959517ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52899079"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54317877"
 ---
-# <a name="xamarinessentials-preferences"></a>Xamarin.Essentials：Preferences
+# <a name="xamarinessentials-preferences"></a>Xamarin.Essentials:首选项
 
 Preferences 类帮助将应用程序首选项存储在键/值存储中。
 
@@ -68,7 +69,7 @@ Preferences.Clear();
 
 ## <a name="implementation-details"></a>实现详细信息
 
-`DateTime` 的值是使用 `DateTime` 类定义的两种方法以 64 位二进制（长整型）格式存储的：[`ToBinary`](xref:System.DateTime.ToBinary) 方法用于对 `DateTime` 值进行编码，[`FromBinary`](xref:System.DateTime.FromBinary(System.Int64)) 方法对值进行解码。 当存储的 `DateTime` 不是协调世界时 (UTC) 值时，请参阅这些方法的相关文档以了解如何进行对值解码的调整。
+`DateTime` 的值采用 `DateTime` 类定义的两种方法按 64 位二进制（长整型）格式进行存储：[`ToBinary`](xref:System.DateTime.ToBinary) 方法用于编码 `DateTime` 值，[`FromBinary`](xref:System.DateTime.FromBinary(System.Int64)) 方法对值进行解码。 当存储的 `DateTime` 不是协调世界时 (UTC) 值时，请参阅这些方法的相关文档以了解如何进行对值解码的调整。
 
 ## <a name="platform-implementation-specifics"></a>平台实现细节
 
@@ -98,3 +99,9 @@ Preferences.Clear();
 
 - [Preferences 源代码](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Preferences)
 - [Preferences API 文档](xref:Xamarin.Essentials.Preferences)
+
+## <a name="related-video"></a>相关视频
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Preferences-Essential-API-of-the-Week/player]
+
+[!include[](~/essentials/includes/xamarin-show-essentials.md)]
