@@ -6,12 +6,12 @@ author: jamesmontemagno
 ms.author: jamont
 ms.custom: video
 ms.date: 11/04/2018
-ms.openlocfilehash: c40762ad4d165c1e5a29bdf9dc6d3c0fdb8581f7
-ms.sourcegitcommit: cb484bd529bf2d8e48e5b3d086bdfc31895ec209
+ms.openlocfilehash: d2ce173740b6de1c628c34c3b5c1227ed0fbcd3c
+ms.sourcegitcommit: 56b2f5cda7c37874618736d6129f19a8976826f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53411721"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418642"
 ---
 # <a name="get-started-with-xamarinessentials"></a>Xamarin.Essentials 入门
 
@@ -21,7 +21,7 @@ Xamarin.Essentials 提供了适用于任何 iOS、Android 或 UWP 应用程序�
 
 Xamarin.Essentials 支持以下平台和操作系统：
 
-| 平台 | 版本 |
+| 平台 | Version |
 | --- | --- |
 | Android | 4.4 (API 19) 或更高版本 |
 | iOS |10.0 或更高版本 |
@@ -40,9 +40,6 @@ Xamarin.Essentials 可用作 NuGet 包，可以通过使用 Visual Studio 将其
     # <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
     在“解决方案资源管理器”面板中，右键单击解决方案名称，然后选择“管理 NuGet 包”。 搜索 Xamarin.Essentials 并将包安装到所有项目，包括 Android、iOS、UWP 和 .NET Standard 库。
-
-    > [!TIP]
-    > [Xamarin.Essentials NuGet](https://www.nuget.org/packages/Xamarin.Essentials) 处于预览状态时，选中“包括预发行版”框。
 
     # <a name="visual-studio-for-mactabmacos"></a>[Visual Studio for Mac](#tab/macos)
 

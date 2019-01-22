@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: conceptdev
 ms.author: crdun
 ms.date: 04/18/2018
-ms.openlocfilehash: 741e18d84c25bb4479480949a271a5845e99daa1
-ms.sourcegitcommit: e268fd44422d0bbc7c944a678e2cc633a0493122
+ms.openlocfilehash: 3c552d97f64b28ed47a9226047862bffcfa8c9e3
+ms.sourcegitcommit: 56b2f5cda7c37874618736d6129f19a8976826f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50118456"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418681"
 ---
 # <a name="using-sqlitenet-with-android"></a>与 Android 一起使用 SQLite.NET
 
@@ -21,8 +21,8 @@ Xamarin 建议 SQLite.NET 库是非常基本的 ORM，你可以轻松地存储�
 若要在 Xamarin 应用中包含 SQLite.NET 库，请向项目添加以下 NuGet 包：
 
 - **包名称：** sqlite net pcl
-- **作者：** Frank A.Krueger
-- **Id:** sqlite net pcl
+- **作者：** Frank A. Krueger
+- **ID：** sqlite net pcl
 - **Url:** [nuget.org/packages/sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)
 
 [![SQLite.NET NuGet 包](using-sqlite-orm-images/image1a-sml.png "SQLite.NET NuGet 包")](using-sqlite-orm-images/image1a.png#lightbox)
@@ -136,7 +136,7 @@ public static void DoSomeDataAccess () {
 -   **[MaxLength(value)]** &ndash;将 text 属性的长度限制时尝试执行数据库插入。 使用代码应验证这一点在为此属性时才检查的数据库插入或更新操作尝试插入对象之前。
 
 -   **[忽略]** &ndash;导致 SQLite.NET 以忽略此属性。
-    这是对于具有无法在数据库中存储的类型的属性或属性不能自动解决的模型集合是 SQLite 特别有用。
+    这是特别适用于具有的类型，不能在数据库中存储的属性或属性，用于模拟 SQLite 无法自动解决的集合。
 
 -   **[Unique]** &ndash;可以确保基础数据库列中的值的唯一性。
 
@@ -205,7 +205,7 @@ var rowcount = db.Delete<Stock>(someStock.Id); // Id is the primary key
 
 ## <a name="using-sqlitenet-with-multiple-threads"></a>通过多个线程使用 SQLite.NET
 
-SQLite 支持三种不同的线程模式：*单线程*，*多线程*，并*已序列化*。 如果你想要从多个线程不受任何限制地访问数据库，可以配置要使用的 SQLite**序列化**线程处理模式。 务必尽早在你的应用程序中设置此模式 (例如，在开头`OnCreate`方法)。
+SQLite 支持三种不同的线程模式：*单线程*，*多线程*，和*序列化*。 如果你想要从多个线程不受任何限制地访问数据库，可以配置要使用的 SQLite**序列化**线程处理模式。 务必尽早在你的应用程序中设置此模式 (例如，在开头`OnCreate`方法)。
 
 若要更改线程的模式，请调用`SqliteConnection.SetConfig`。 例如，这行代码配置适用于 SQLite**序列化**模式： 
 
