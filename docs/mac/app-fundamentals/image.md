@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: lobrien
 ms.author: laobri
 ms.date: 03/15/2017
-ms.openlocfilehash: 8bc319b53e4a93d5cac35c4f8c3263b72dfe45e2
-ms.sourcegitcommit: 9492e417f739772bf264f5944d6bae056e130480
+ms.openlocfilehash: 719efc87b8843d0d2fcd2643aab23aa6849d940a
+ms.sourcegitcommit: 190808013249005ceffbc798f9f4570e8cdc943a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53746903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841375"
 ---
 # <a name="images-in-xamarinmac"></a>在 Xamarin.Mac 中的图像
 
@@ -82,7 +82,7 @@ _本文介绍如何使用图像和 Xamarin.Mac 应用程序中的图标。它介
 - 这是不完整的向量支持，因为 pdf 文件将在编译时和在最终应用程序中提供的位图是位图的光栅化。
 - 设置资产目录中后，不能调整图像的大小。 如果你尝试调整图像 （不管是在代码中或通过使用自动布局和大小类） 的大小的图像将会扭曲就像任何其他的位图。
 
-使用时**集中映像**Xcode 的 Interface Builder 中可以只需选择集的名称从下拉列表中**属性检查器**: * *
+使用时**集中映像**Xcode 的 Interface Builder 中可以只需选择集的名称从下拉列表中**属性检查器**:
 
 ![在 Xcode 的 Interface Builder 中选择一个映像设置](image-images/imageset06.png "在 Xcode 的 Interface Builder 中选择一个映像设置")
 
