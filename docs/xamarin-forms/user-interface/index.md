@@ -66,7 +66,7 @@ DataPages 提供一个 API，用于快速、 轻松地将数据源绑定到预�
 
 ## <a name="layoutslayoutsindexmd"></a>[布局](layouts/index.md)
 
-Xamarin.Forms 具有用于组织屏幕内容的多个布局。 `StackLayout``Grid`， `FlexLayout`， `AbsoluteLayout`， `ScrollView`，和`RelativeLayout`每个可用来创建美观、 响应迅速的用户界面。
+Xamarin.Forms 具有用于组织屏幕内容的多个布局。 `StackLayout`， `Grid`， `FlexLayout`， `AbsoluteLayout`， `ScrollView`和`RelativeLayout`每个可用来创建美观、 响应迅速的用户界面。
 
 ## <a name="listviewlistviewindexmd"></a>[ListView](listview/index.md)
 
